@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "allowJs": false,
+      "checkJs": false,
+      "outDir": "dist/rex/",
+      "rootDir": "./dev"
+    },
+    "exclude": ["node_modules/"],
+    "include": ["dev/"]
+  }

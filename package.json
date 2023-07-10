@@ -1,0 +1,17 @@
+{
+  "name": "rex",
+  "version": "0.1.0",
+  "description": "rex frontend framework",
+  "type": "module",
+  "scripts": {
+    "tsc": "tsc -w",
+    "tw": "npx tailwindcss -i ./dev/tw.css -o ./dist/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sami Fouad",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.1.6"
+  }
+}
