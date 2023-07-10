@@ -1,6 +1,6 @@
 {
-  "name": "rex",
-  "version": "0.1.1",
+  "name": "@fromafrica/rex",
+  "version": "0.1.2",
   "description": "rex frontend framework",
   "type": "module",
   "scripts": {

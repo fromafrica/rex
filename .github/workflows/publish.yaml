@@ -14,8 +14,8 @@ jobs:
       with:
         node-version: '16'
         registry-url: 'https://registry.npmjs.org'
-        scope: '@fawldev'
-    - run: echo "`jq '.name="@fawldev/sentinel"' package.json`" > package.json
+        scope: '@fromafrica'
+    - run: echo "`jq '.name="@fromafrica/rex"' package.json`" > package.json
     - run: npm ci
     - run: npm publish --access public
       env:
