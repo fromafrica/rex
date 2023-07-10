@@ -1,6 +1,6 @@
 {
   "name": "rex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "rex frontend framework",
   "type": "module",
   "scripts": {
@@ -8,8 +8,16 @@
     "tw": "npx tailwindcss -i ./dev/tw.css -o ./dist/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sami Fouad",
-  "license": "ISC",
+  "author": "@fromafrica",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fromafrica/rex.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fromafrica/rex/issues"
+  },
+  "homepage": "https://github.com/fromafrica/rex",
   "devDependencies": {
     "tailwindcss": "^3.3.2",
     "typescript": "^5.1.6"
