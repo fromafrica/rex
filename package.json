@@ -1,12 +1,23 @@
 {
   "name": "@fromafrica/rex",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "rex frontend framework",
   "type": "module",
+  "types": "./dev/types.d.ts",
+  "main": "./dist/rex.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dev/types.d.ts",
+        "default": "./dist/rex.js"
+      }
+    }
+  },
+  "files": [
+    "dist/*"
+ ],
   "scripts": {
-    "tsc": "tsc -w",
-    "tw": "npx tailwindcss -i ./dev/tw.css -o ./dist/style.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc -w"
   },
   "author": "@fromafrica",
   "repository": "https://github.com/fromafrica/rex.git",
@@ -16,7 +27,6 @@
   },
   "homepage": "https://github.com/fromafrica/rex",
   "devDependencies": {
-    "tailwindcss": "^3.3.2",
     "typescript": "^5.1.6"
   }
 }
