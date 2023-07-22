@@ -1,6 +1,6 @@
 {
   "name": "@fromafrica/rex",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "rex frontend framework",
   "type": "module",
   "types": "./dev/types.d.ts",
