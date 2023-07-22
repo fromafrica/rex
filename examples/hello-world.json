@@ -1,0 +1,12 @@
+[
+    "#index.html",
+    "#style.css",
+    "#favicon.ico",
+
+    "+/rex",
+    "#rex/components.js",
+
+    "+rex/lib",
+    "#rex/lib/hello-world.ts",
+    "#rex/lib/error-page.js"
+]
