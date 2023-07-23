@@ -1,24 +1,22 @@
 {
   "name": "@fromafrica/rex",
-  "version": "0.2.13",
+  "version": "0.3.0",
   "description": "rex frontend framework",
   "type": "module",
   "types": "./dev/types.d.ts",
-  "main": "./dist/rex.js",
+  "main": "./dev/rex.js",
   "exports": {
     ".": {
       "import": {
         "types": "./dev/types.d.ts",
-        "default": "./dist/rex.js"
+        "default": "./dev/rex.js"
       }
     }
   },
   "files": [
-    "dist/*"
+    "dev/*"
  ],
-  "scripts": {
-    "tsc": "tsc -w"
-  },
+  "scripts": {},
   "author": "@fromafrica",
   "repository": "https://github.com/fromafrica/rex.git",
   "license": "MIT",
@@ -26,7 +24,5 @@
     "url": "https://github.com/fromafrica/rex/issues"
   },
   "homepage": "https://github.com/fromafrica/rex",
-  "devDependencies": {
-    "typescript": "^5.1.6"
-  }
+  "devDependencies": {}
 }
