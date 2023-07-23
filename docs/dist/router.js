@@ -4,17 +4,16 @@ function getPath () {
 	return path;
 }
 
-function checkPath (routes: Array<string>, path: Array<string>): boolean {
+function checkPath (routes, path) {
 	if (path[0] === "") { return true; } // to cover the home page
 	
 	return routes.includes(path[0]); // check all other routes
 }
 
-function renderComponent (component: string) {
+function renderComponent (component) {
 	const router = window.appState.getRouter();
-    console.log(router);
     console.log('requested page:'+ component);
-    return '<hello-world></hello-world>';
+    return component;
 }
 
 export { getPath, checkPath, renderComponent };
