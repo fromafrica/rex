@@ -39,7 +39,7 @@ class RexHelp extends HTMLElement {
 }
 
 const errorTemplate = document.createElement("template");
-errorTemplate.innerHTML = `<div class="">rex help</div>`;
+errorTemplate.innerHTML = `<div class="">404! sorry! route not found!</div>`;
 
 class RexError extends HTMLElement {
     constructor() {
