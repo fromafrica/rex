@@ -28,7 +28,12 @@ window.appState.setRouter({
 // validate + display
 const router = window.appState.getRouter();
 if (checkPath(Object.keys(router), path)) {
-	document.querySelector("#app").innerHTML = renderComponent(router[path[0]]);
+	if (path === "")
+	{
+		document.querySelector("#app").innerHTML = "<rex-home></rex-home>";
+	} else {
+		document.querySelector("#app").innerHTML = renderComponent(router[path[0]]);
+	}
 } else {
 	document.querySelector("#app").innerHTML = "<rex-error></rex-error>";
 }

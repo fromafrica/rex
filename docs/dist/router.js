@@ -11,9 +11,11 @@ function checkPath (routes, path) {
 }
 
 function renderComponent (component) {
-	const router = window.appState.getRouter();
-    console.log('requested page:'+ component);
-    return component;
+	if (component === undefined || component === null) { 
+		return '<rex-home></rex-home>';
+	} else {
+    	return component;
+	}
 }
 
 export { getPath, checkPath, renderComponent };

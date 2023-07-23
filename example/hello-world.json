@@ -7,6 +7,5 @@
     "#rex/components.js",
 
     "+rex/lib",
-    "#rex/lib/hello-world.ts",
-    "#rex/lib/error-page.js"
+    "#rex/lib/hello-world.js"
 ]
