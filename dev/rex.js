@@ -22,6 +22,7 @@ const path = getPath();
 window.appState.setRouter({
 	home: '<rex-home></rex-home>',
 	help: '<rex-help></rex-help>',
+	error: '<rex-error></rex-error>',
 });
 
 // validate + display
