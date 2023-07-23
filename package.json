@@ -1,20 +1,20 @@
 {
   "name": "@fromafrica/rex",
-  "version": "0.2.10",
+  "version": "0.2.12",
   "description": "rex frontend framework",
   "type": "module",
   "types": "./dev/types.d.ts",
-  "main": "./docs/dist/rex.js",
+  "main": "./dist/rex.js",
   "exports": {
     ".": {
       "import": {
         "types": "./dev/types.d.ts",
-        "default": "./docs/dist/rex.js"
+        "default": "./dist/rex.js"
       }
     }
   },
   "files": [
-    "docs/dist/*"
+    "dist/*"
  ],
   "scripts": {
     "tsc": "tsc -w"

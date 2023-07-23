@@ -1,5 +1,5 @@
 const template = document.createElement("template");
-template.innerHTML = `<div class="text-black bg-slate-600 text-lg ">hello rex</div>`;
+template.innerHTML = `<div class="">hello rex</div>`;
 
 class HelloWorld extends HTMLElement {
     constructor() {
