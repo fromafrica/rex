@@ -1,12 +1,12 @@
 const template = document.createElement("template");
 template.innerHTML = 
 `<div class="">
-  hello world, from rex!
+  another page from rex!
   <br><br>
-  <button onClick="$$.changeRoute('/anotherPage', '#app');">another user defined page</button></div>
+  <button onClick="$$.changeRoute('/helloWorld', '#app');">go back home</button></div>
 `;
 
-class HelloWorld extends HTMLElement {
+class AnotherPage extends HTMLElement {
     constructor() {
       super();
     }
@@ -26,4 +26,4 @@ class HelloWorld extends HTMLElement {
     }
   }
 
-  export { HelloWorld };
+  export { AnotherPage };

@@ -1,5 +1,6 @@
 const homeTemplate = document.createElement("template");
-homeTemplate.innerHTML = `<div class="">rex home</div>`;
+homeTemplate.innerHTML = `<div class="">rex home<br><br>
+<button onClick="$$.changeRoute('/help', '#app');">Click me</button></div>`;
 
 class RexHome extends HTMLElement {
     constructor() {
@@ -11,15 +12,19 @@ class RexHome extends HTMLElement {
     }
   
     disconnectedCallback() {
+      this.removeEventListener('click', $$.changeRoute);
     }
   
     render() {
         this.appendChild(homeTemplate.content.cloneNode(true));
+        const button = document.querySelector("button");
+        button.addEventListener('click', () => {  }, false);
     }
 }
 
 const helpTemplate = document.createElement("template");
-helpTemplate.innerHTML = `<div class="">rex help</div>`;
+helpTemplate.innerHTML = `<div class="">rex help<br><br>
+<button onClick="$$.changeRoute('/home', '#app');">Click me</button></div>`;
 
 class RexHelp extends HTMLElement {
     constructor() {
@@ -31,10 +36,13 @@ class RexHelp extends HTMLElement {
     }
   
     disconnectedCallback() {
+      this.removeEventListener('click', $$.changeRoute);
     }
   
     render() {
         this.appendChild(helpTemplate.content.cloneNode(true));
+        const button = document.querySelector("button");
+        button.addEventListener('click', () => {  }, false);
     }
 }
 

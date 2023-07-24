@@ -1,6 +1,6 @@
 {
   "name": "@fromafrica/rex",
-  "version": "0.3.6",
+  "version": "0.4.0",
   "description": "rex frontend framework",
   "type": "module",
   "types": "./docs/dist/types.d.ts",
@@ -15,8 +15,11 @@
   },
   "files": [
     "docs/dist/*"
- ],
-  "scripts": {},
+  ],
+  "scripts": {
+    "example": "serve example",
+    "dev": "serve --cors docs/dist"
+  },
   "author": "@fromafrica",
   "repository": "https://github.com/fromafrica/rex.git",
   "license": "MIT",
@@ -24,5 +27,7 @@
     "url": "https://github.com/fromafrica/rex/issues"
   },
   "homepage": "https://github.com/fromafrica/rex",
-  "devDependencies": {}
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
 }

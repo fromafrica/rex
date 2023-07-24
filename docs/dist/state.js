@@ -1,11 +1,3 @@
-// configure an immutible initial state
-const appConfig = {
-	siteName: "rex alpha",
-};
-
-// applies immutibility
-Object.freeze(appConfig);
-
 // configure the mutable runtime state
 const appRuntime = {
 	menuOpen: false,
@@ -13,7 +5,7 @@ const appRuntime = {
 };
 
 // collection of setters/getters/toggles for app state
-var appState = {
+var $$ = {
 	// siteName
 	getSiteName: () => appConfig.siteName,
 
@@ -26,4 +18,4 @@ var appState = {
 	getRouter: () => appRuntime.router,
 }
 
-export { appState };
+export { $$ };

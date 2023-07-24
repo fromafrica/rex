@@ -10,12 +10,32 @@ function checkPath (routes, path) {
 	return routes.includes(path[0]); // check all other routes
 }
 
-function renderComponent (component) {
-	if (component === undefined || component === null) { 
-		return '<rex-home></rex-home>';
+function historyEntry (targetUrl) {
+	window.history.pushState({url: "" + targetUrl + "", prev: ""+ window.location.pathname +""}, null, targetUrl);
+}
+
+function changeRoute (path, target) {
+	const router = $$.getRouter();
+	if (path === "" || path === "/" || path === "/home")
+	{
+		$$.historyEntry('/home');
+		document.querySelector(target).innerHTML = "<x-home></x-home>";
 	} else {
-    	return component;
+		if (Object.keys(router).includes(path))
+		{
+			$$.historyEntry(path);
+			document.querySelector(target).innerHTML = router[path];
+		} else {
+			$$.historyEntry('/error');
+			document.querySelector(target).innerHTML = "<x-error></x-error>";
+		}
+		
 	}
 }
 
-export { getPath, checkPath, renderComponent };
+export { 
+	getPath, 
+	checkPath, 
+	changeRoute,
+	historyEntry
+};

@@ -4,8 +4,9 @@
     "#favicon.ico",
 
     "+/rex",
-    "#rex/components.js",
+    "#rex/router.js",
 
     "+rex/lib",
-    "#rex/lib/hello-world.js"
+    "#rex/lib/hello-world.js",
+    "#rex/lib/another-page.js"
 ]
