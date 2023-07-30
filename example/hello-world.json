@@ -2,6 +2,7 @@
     "#/index.html",
     "#/style.css",
     "#/favicon.ico",
+    "#/serve.json",
 
     "+/rex",
     "#/rex/router.js",
